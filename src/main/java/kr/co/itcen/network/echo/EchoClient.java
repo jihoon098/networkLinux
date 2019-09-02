@@ -12,7 +12,7 @@ import java.net.Socket;
 import java.util.Scanner;
 
 public class EchoClient {
-	private static String SERVER_IP = "192.168.1.92";
+	private static String SERVER_IP = "192.168.1.124";
 	private static int SERVER_PORT = 8000;
 	
 	public static void main(String[] args) {
@@ -26,6 +26,7 @@ public class EchoClient {
 			InetSocketAddress inetSocketAddress
 			= new InetSocketAddress(SERVER_IP, SERVER_PORT);
 			socket.connect(inetSocketAddress);
+			
 			
 			//socket의 I/O Stream가져오기
 			InputStream is = socket.getInputStream();

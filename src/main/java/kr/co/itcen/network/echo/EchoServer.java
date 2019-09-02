@@ -21,7 +21,7 @@ public class EchoServer {
 			InetSocketAddress inetSocketAddress = new InetSocketAddress(inetAddress, PORT);
 			serverSocket.bind(inetSocketAddress);
 			log("binding " + inetAddress.getHostAddress() + ":" + PORT);
-			
+
 			//3. accept
 			while(true) {
 				Socket socket = serverSocket.accept();
